@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bukit Pamoroan - Wisata Alam & Budaya Tradisional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font (Inter & Plus Jakarta Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316', // Vibrant Orange from reference
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                        },
+                        nature: {
+                            500: '#10b981',
+                            800: '#065f46',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Header Banner -->
+    <header class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 text-white pt-6 pb-4 border-b border-emerald-700/50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-700/60 rounded-full text-xs font-semibold tracking-wide text-emerald-200 mb-2 border border-emerald-500/30">
+                        <i class="fa-solid fa-leaf text-emerald-400"></i> Wisata Alam & Budaya Tradisi
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white drop-shadow-sm">
+                        Selamat Datang Di Wisata Bukit Pamoroan
+                    </h1>
+                    <p class="text-emerald-100 text-sm sm:text-base mt-1 opacity-90">
+                        Nikmati keindahan alam, pengalaman outbound, petualangan tak terlupakan di Talaga, Majalengka
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/15 text-xs text-emerald-100 shadow-inner">
+                    <div class="text-center px-3 border-r border-white/20">
+                        <span class="block font-bold text-lg text-white">4.9 ★</span>
+                        <span>Rating Wisata</span>
+                    </div>
+                    <div class="text-center px-3">
+                        <span class="block font-bold text-lg text-white">100%</span>
+                        <span>Ramah Keluarga</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Photo Collaged Activity Banner -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6">
+        <div class="bg-white p-3 sm:p-4 rounded-2xl shadow-sm border border-slate-200/80">
+            <div class="flex items-center justify-between mb-3 px-1">
+                <h2 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2">
+                    <i class="fa-solid fa-camera-retro text-brand-500"></i> Foto-Foto Kegiatan Wisata
+                </h2>
+                <span class="text-xs text-brand-600 font-medium">Galeri Aktivitas Bukit Pamoroan</span>
+            </div>
+            
+            <!-- Grid Photo Mosaic -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 rounded-xl overflow-hidden">
+                <div class="relative group h-40 sm:h-52 overflow-hidden rounded-lg bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Outbound Pulesari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
+                        <span class="text-white text-xs font-semibold">Outbound & Tracking</span>
+                    </div>
+                </div>
+                <div class="relative group h-40 sm:h-52 overflow-hidden rounded-lg bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80" alt="Wisata Sungai & Rafting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
+                        <span class="text-white text-xs font-semibold">Susur Sungai & Rafting</span>
+                    </div>
+                </div>
+                <div class="relative group h-40 sm:h-52 overflow-hidden rounded-lg bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" alt="Wisata Budaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
+                        <span class="text-white text-xs font-semibold">Budaya & Tradisi Lokal</span>
+                    </div>
+                </div>
+                <div class="relative group h-40 sm:h-52 overflow-hidden rounded-lg bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80" alt="Museum & Kebun Salak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
+                        <span class="text-white text-xs font-semibold">Petik Salak & Edukasi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Bar (Orange Menu Bar) -->
+    <nav class="sticky top-0 z-40 bg-gradient-to-r from-brand-600 via-brand-500 to-amber-600 shadow-lg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-1 lg:space-x-2 font-medium text-sm overflow-x-auto hide-scrollbar w-full">
+                    <a href="#beranda" class="px-3.5 py-2 rounded-lg bg-black/20 text-white font-semibold flex items-center gap-1.5 transition">
+                        <i class="fa-solid fa-house text-xs"></i> Beranda
+                    </a>
+                    <a href="#about" class="px-3.5 py-2 rounded-lg hover:bg-white/15 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-info text-xs"></i> ABOUT
+                    </a>
+                    <a href="#obyek-wisata" class="px-3.5 py-2 rounded-lg hover:bg-white/15 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-mountain text-xs"></i> OBYEK WISATA
+                    </a>
+                    <a href="#fasilitas" class="px-3.5 py-2 rounded-lg hover:bg-white/15 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-icons text-xs"></i> FASILITAS WISATA
+                    </a>
+                    <a href="#paket-wisata" class="px-3.5 py-2 rounded-lg hover:bg-white/15 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-box-open text-xs"></i> PAKET WISATA
+                    </a>
+                    <a href="#museum-salak" class="px-3.5 py-2 rounded-lg hover:bg-white/15 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-apple-whole text-xs"></i> MUSEUM SALAK
+                    </a>
+                    <a href="#pemesanan" class="px-3.5 py-2 rounded-lg hover:bg-white/15 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-ticket text-xs"></i> PEMESANAN
+                    </a>
+                    <a href="#galery" class="px-3.5 py-2 rounded-lg hover:bg-white/15 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-images text-xs"></i> GALERY
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex md:hidden items-center justify-between w-full">
+                    <span class="font-bold tracking-wide text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-compass"></i> Menu Bukit Pamoroan
+                    </span>
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-white hover:bg-white/20 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 pt-1 border-t border-white/20 space-y-1 text-sm">
+                <a href="#beranda" class="block px-3 py-2 rounded-md bg-black/20 font-semibold">Beranda</a>
+                <a href="#about" class="block px-3 py-2 rounded-md hover:bg-white/10">About</a>
+                <a href="#obyek-wisata" class="block px-3 py-2 rounded-md hover:bg-white/10">Obyek Wisata</a>
+                <a href="#fasilitas" class="block px-3 py-2 rounded-md hover:bg-white/10">Fasilitas Wisata</a>
+                <a href="#paket-wisata" class="block px-3 py-2 rounded-md hover:bg-white/10">Paket Wisata</a>
+                <a href="#museum-salak" class="block px-3 py-2 rounded-md hover:bg-white/10">Museum Salak</a>
+                <a href="#pemesanan" class="block px-3 py-2 rounded-md hover:bg-white/10">Pemesanan</a>
+                <a href="#galery" class="block px-3 py-2 rounded-md hover:bg-white/10">Galery</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="beranda">
+        
+        <!-- Category Filter & Search Bar Header -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-fire text-brand-500"></i> Rekomendasi Paket Wisata Populer
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-500">Pilih paket liburan seru, petualangan alam, atau edukasi tradisi lokal.</p>
+            </div>
+            
+            <!-- Filter Pills -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-1 hide-scrollbar">
+                <button onclick="filterCategory('all')" class="category-btn active bg-brand-500 text-white px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap shadow-sm transition">Semua Paket</button>
+                <button onclick="filterCategory('rafting')" class="category-btn bg-white text-slate-600 border border-slate-200 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap hover:bg-slate-100 transition">Rafting & Sungai</button>
+                <button onclick="filterCategory('atv')" class="category-btn bg-white text-slate-600 border border-slate-200 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap hover:bg-slate-100 transition">ATV & Adventure</button>
+                <button onclick="filterCategory('budaya')" class="category-btn bg-white text-slate-600 border border-slate-200 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap hover:bg-slate-100 transition">Budaya & Edukasi</button>
+            </div>
+        </div>
+
+        <!-- 2-Column Main Layout (Left: Packages Cards, Right: Sidebar) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- LEFT COLUMN: Paket Wisata Cards (8 Cols) -->
+            <div class="lg:col-span-8 space-y-6" id="paket-wisata">
+                
+                <div id="package-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Card 1 (From Task Specs) -->
+                    <article class="package-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="rafting">
+                        <div class="relative h-48 overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80" alt="Rafting & Pendakian" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-brand-500/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                                Best Seller
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/60 text-white text-[11px] font-medium px-2 py-1 rounded-md backdrop-blur-sm">
+                                <i class="fa-regular fa-calendar-alt"></i> 11 September 2026
+                            </div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-base font-bold text-slate-900 leading-snug hover:text-brand-600 transition">
+                                    Paket Mendaki Gunung Batur dan Ayung Rafting Ubud
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+                                    Kombinasi paket petualangan spektakuler! Menikmati sunrise indah dari puncak Gunung Batur dilanjutkan dengan arung jeram seru di Sungai Ayung Ubud.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-[10px] uppercase font-semibold text-slate-400 block">Harga Mulai</span>
+                                    <span class="text-base font-extrabold text-brand-600">Rp 850.000 <span class="text-xs font-normal text-slate-500">/pax</span></span>
+                                </div>
+                                <button onclick="openBookingModal('Paket Mendaki Gunung Batur dan Ayung Rafting Ubud', 850000)" class="px-3.5 py-2 bg-slate-900 hover:bg-brand-600 text-white text-xs font-semibold rounded-lg transition duration-200">
+                                    Pesan Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 (From Task Specs) -->
+                    <article class="package-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="atv rafting">
+                        <div class="relative h-48 overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Kuber Bali ATV & Rafting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-red-500/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                                Promo Hemat
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/60 text-white text-[11px] font-medium px-2 py-1 rounded-md backdrop-blur-sm">
+                                <i class="fa-regular fa-calendar-alt"></i> 29 Agustus 2026
+                            </div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-base font-bold text-slate-900 leading-snug hover:text-brand-600 transition">
+                                    Paket Kuber Bali ATV dan Ayung Rafting - Harga Promo Mulai 650rb
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+                                    Pacu adrenalin Anda menembus gua dan air terjun dengan ATV petualangan Kuber, lalu lanjutkan keseruan basah-basahan rafting di Sungai Ayung.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-[10px] uppercase font-semibold text-slate-400 block">Harga Promo</span>
+                                    <span class="text-base font-extrabold text-brand-600">Rp 650.000 <span class="text-xs font-normal text-slate-500">/pax</span></span>
+                                </div>
+                                <button onclick="openBookingModal('Paket Kuber Bali ATV dan Ayung Rafting', 650000)" class="px-3.5 py-2 bg-slate-900 hover:bg-brand-600 text-white text-xs font-semibold rounded-lg transition duration-200">
+                                    Pesan Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 (Pulesari Special) -->
+                    <article class="package-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="budaya">
+                        <div class="relative h-48 overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80" alt="Outbound Pulesari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-emerald-600/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                                Edukasi & Tradisi
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/60 text-white text-[11px] font-medium px-2 py-1 rounded-md backdrop-blur-sm">
+                                <i class="fa-regular fa-calendar-alt"></i> Setiap Hari
+                            </div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-base font-bold text-slate-900 leading-snug hover:text-brand-600 transition">
+                                    Paket Outbound & Tracking Desa Wisata Pulesari
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+                                    Pengalaman outbound seru khas Pulesari: susur sungai 8 rintangan, petik buah salak langsung dari kebun, belajar seni batik, serta makan siang prasmanan masakan desa.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-[10px] uppercase font-semibold text-slate-400 block">Harga Group</span>
+                                    <span class="text-base font-extrabold text-brand-600">Rp 125.000 <span class="text-xs font-normal text-slate-500">/pax</span></span>
+                                </div>
+                                <button onclick="openBookingModal('Paket Outbound & Tracking Desa Wisata Pulesari', 125000)" class="px-3.5 py-2 bg-slate-900 hover:bg-brand-600 text-white text-xs font-semibold rounded-lg transition duration-200">
+                                    Pesan Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 (Museum Salak) -->
+                    <article class="package-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="budaya">
+                        <div class="relative h-48 overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" alt="Museum Salak Edukasi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-amber-600/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                                Wisata Edukasi
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/60 text-white text-[11px] font-medium px-2 py-1 rounded-md backdrop-blur-sm">
+                                <i class="fa-regular fa-calendar-alt"></i> Setiap Hari
+                            </div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-base font-bold text-slate-900 leading-snug hover:text-brand-600 transition">
+                                    Paket Kunjungan Museum Salak & Olahan Dodol
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+                                    Mengenal keanekaragaman varietas salak Pohon Sleman, belajar memproses olahan dodol, keripik salak, dan pembuatan bakpia rasa salak.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-[10px] uppercase font-semibold text-slate-400 block">Harga Pelajar</span>
+                                    <span class="text-base font-extrabold text-brand-600">Rp 55.000 <span class="text-xs font-normal text-slate-500">/pax</span></span>
+                                </div>
+                                <button onclick="openBookingModal('Paket Kunjungan Museum Salak & Olahan Dodol', 55000)" class="px-3.5 py-2 bg-slate-900 hover:bg-brand-600 text-white text-xs font-semibold rounded-lg transition duration-200">
+                                    Pesan Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Empty State Message -->
+                <div id="no-result" class="hidden p-8 text-center bg-white rounded-2xl border border-slate-200">
+                    <i class="fa-solid fa-magnifying-glass text-4xl text-slate-300 mb-3"></i>
+                    <p class="text-slate-600 font-medium">Tidak ada paket wisata yang sesuai dengan pencarian Anda.</p>
+                    <button onclick="resetSearch()" class="mt-3 text-xs text-brand-600 hover:underline font-semibold">Tampilkan Semua Paket</button>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Sidebar Widgets (4 Cols) -->
+            <aside class="lg:col-span-4 space-y-6">
+                
+                <!-- Search Box Widget -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <h3 class="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-magnifying-glass text-brand-500"></i> Cari Paket Wisata
+                    </h3>
+                    <div class="relative">
+                        <input type="text" id="search-input" onkeyup="searchPackages()" placeholder="Cari paket atau kata kunci..." class="w-full pl-3.5 pr-10 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 transition">
+                        <button onclick="searchPackages()" class="absolute right-2 top-2 px-2.5 py-1 bg-brand-500 hover:bg-brand-600 text-white rounded-lg text-xs transition">
+                            Cari
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Video Link YouTube Widget (From Task Specs) -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                            <i class="fa-brands fa-youtube text-red-600 text-base"></i> Link Video Youtube
+                        </h3>
+                        <span class="text-[10px] bg-red-100 text-red-700 px-2 py-0.5 rounded font-semibold">HD Preview</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-3">Lihat gambaran serunya aktivitas paket wisata di Desa Pulesari melalui video berikut:</p>
+                    
+                    <!-- Embedded Video Responsive Wrapper -->
+                    <div class="relative w-full aspect-video bg-black rounded-xl overflow-hidden shadow-md group">
+                        <iframe class="w-full h-full" src="https://youtu.be/nHwya2QxtIw?si=7wq6UuQKpSD6DYMH" title="Video Wisata Pulesari" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="mt-3 p-2.5 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 flex items-center justify-between">
+                        <span class="truncate font-medium"><i class="fa-solid fa-circle-play text-red-500 mr-1"></i> Pesona Indonesia Pulesari</span>
+                        <a href="https://youtube.com" target="_blank" class="text-brand-600 hover:underline font-semibold text-[11px] whitespace-nowrap ml-2">Buka YouTube &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Quick Information & Facility Badge Widget -->
+                <div class="bg-gradient-to-br from-emerald-800 to-teal-900 text-white p-5 rounded-2xl shadow-sm relative overflow-hidden" id="fasilitas">
+                    <div class="absolute -right-4 -bottom-4 text-white/10 text-8xl font-black">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-sm font-bold mb-3 uppercase tracking-wider text-emerald-200 flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved"></i> Fasilitas Desa Wisata
+                    </h3>
+                    <ul class="space-y-2.5 text-xs text-emerald-100 relative z-10">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-emerald-400"></i> Pendopo Agung & Area Kumpul
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-emerald-400"></i> Homestay Rumah Warga Tradisional
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-emerald-400"></i> Museum & Kebun Edukasi Salak
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-emerald-400"></i> Wahana Outbound & Sungai Swadaya
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-emerald-400"></i> Area Parkir Luas & Musholla Clean
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Contact / Reservation Callout -->
+                <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200/80">
+                    <h3 class="text-sm font-bold text-amber-900 mb-1 flex items-center gap-2">
+                        <i class="fa-solid fa-headset text-brand-600"></i> Layanan Kontak & Info
+                    </h3>
+                    <p class="text-xs text-amber-800/80 mb-3">Butuh paket kustom untuk rombongan / makrab / gathering perusahaan?</p>
+                    <a href="https://wa.me/628967358345" target="_blank" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl transition shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Hubungi Pengelola (WhatsApp)
+                    </a>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- About & Museum Salak Information Section -->
+    <section class="bg-white border-t border-slate-200/80 py-12 my-8" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Tentang Desa Wisata Pulesari</span>
+                <h2 class="text-2xl font-bold text-slate-900 mt-1 mb-4">Mengangkat Tradisi, Merawat Alam</h2>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                    Desa Wisata Pulesari terletak di Wono Kerto, Turi, Sleman, Yogyakarta. Didirikan sejak tahun 2012, desa ini menawarkan konsep wisata pedesaan terpadu berbasis kebudayaan, keindahan alam lereng Gunung Merapi, serta potensi perkebunan salak pondoh.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-xs font-medium text-slate-700">
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-500 text-base"></i> Sleman, D.I. Yogyakarta
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center gap-2">
+                        <i class="fa-solid fa-people-group text-emerald-600 text-base"></i> Ramah Komunitas & Sekolah
+                    </div>
+                </div>
+            </div>
+            <div id="museum-salak" class="bg-gradient-to-br from-amber-500 to-brand-600 text-white p-6 sm:p-8 rounded-2xl shadow-lg relative overflow-hidden">
+                <i class="fa-solid fa-apple-whole absolute -right-6 -bottom-6 text-9xl opacity-15"></i>
+                <h3 class="text-xl font-extrabold mb-2">Museum Salak Pulesari</h3>
+                <p class="text-xs sm:text-sm text-amber-100 mb-4 leading-relaxed">
+                    Satu-satunya museum edukasi keanekaragaman tanaman salak! Pelajari berbagai varietas tanaman salak, cara pengolahan produk turunan seperti bakpia salak, dodol salak, hingga keripik salak khas Pulesari.
+                </p>
+                <button onclick="alert('Informasi Museum Salak: Buka setiap hari pukul 08.00 - 16.00 WIB. Tiket masuk sudah termasuk pemandu edukasi.')" class="px-4 py-2 bg-white text-brand-700 font-bold text-xs rounded-lg hover:bg-amber-50 transition shadow-sm">
+                    Informasi Kunjungan Museum
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h4 class="text-white font-bold text-sm mb-3">Desa Wisata Pulesari</h4>
+                <p class="leading-relaxed">Destinasi wisata alam, outbound, rafting, dan edukasi budaya unggulan di Sleman Yogyakarta.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-3">Menu Cepat</h4>
+                <ul class="space-y-2">
+                    <li><a href="#beranda" class="hover:text-white transition">Beranda</a></li>
+                    <li><a href="#paket-wisata" class="hover:text-white transition">Daftar Paket Wisata</a></li>
+                    <li><a href="#museum-salak" class="hover:text-white transition">Museum Salak Pulesari</a></li>
+                    <li><a href="#about" class="hover:text-white transition">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-3">Kontak & Lokasi</h4>
+                <p class="mb-2"><i class="fa-solid fa-map-pin text-brand-500 mr-2"></i> Pulesari, Wonokerto, Turi, Sleman, D.I. Yogyakarta</p>
+                <p class="mb-2"><i class="fa-solid fa-phone text-brand-500 mr-2"></i> +62 812-3456-7890</p>
+                <p><i class="fa-solid fa-envelope text-brand-500 mr-2"></i> info@desawisatapulesari.id</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-slate-800 text-center text-slate-500">
+            &copy; 2026 Desa Wisata Pulesari. Tugas Praktikum Web UI/UX Semester 3.
+        </div>
+    </footer>
+
+    <!-- Booking Interactive Modal -->
+    <div id="booking-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Pemesanan Paket Wisata</h3>
+            <p class="text-xs text-slate-500 mb-4" id="modal-package-title">Paket Wisata Pulesari</p>
+
+            <form id="booking-form" onsubmit="handleBookingSubmit(event)" class="space-y-3 text-xs">
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Nama Lengkap</label>
+                    <input type="text" required placeholder="Masukkan nama Anda" class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500/20 focus:outline-none">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">No. WhatsApp</label>
+                        <input type="tel" required placeholder="0812..." class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500/20 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Jumlah Peserta</label>
+                        <input type="number" min="1" value="1" required class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500/20 focus:outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Tanggal Tanggal Wisata</label>
+                    <input type="date" required class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500/20 focus:outline-none">
+                </div>
+                <div class="pt-2">
+                    <button type="submit" class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-md transition">
+                        Konfirmasi Pemesanan via WA
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Mobile Menu Navigation
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Booking Modal Logic
+        let selectedPackageName = '';
+        
+        function openBookingModal(packageName, price) {
+            selectedPackageName = packageName;
+            document.getElementById('modal-package-title').innerText = `${packageName} - Rp ${price.toLocaleString('id-ID')}`;
+            document.getElementById('booking-modal').classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('booking-modal').classList.add('hidden');
+        }
+
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            alert(`Terima kasih! Pemesanan untuk "${selectedPackageName}" telah berhasil dibuat. Tim kami akan menghubungi WhatsApp Anda.`);
+            closeBookingModal();
+        }
+
+        // Live Package Search Filter
+        function searchPackages() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const cards = document.querySelectorAll('.package-card');
+            let foundCount = 0;
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    card.classList.remove('hidden');
+                    foundCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            const noResult = document.getElementById('no-result');
+            if (foundCount === 0) {
+                noResult.classList.remove('hidden');
+            } else {
+                noResult.classList.add('hidden');
+            }
+        }
+
+        function resetSearch() {
+            document.getElementById('search-input').value = '';
+            searchPackages();
+        }
+
+        // Category Filter Pills Logic
+        function filterCategory(category) {
+            const cards = document.querySelectorAll('.package-card');
+            const btns = document.querySelectorAll('.category-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-brand-500', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-600');
+            });
+
+            event.target.classList.remove('bg-white', 'text-slate-600');
+            event.target.classList.add('bg-brand-500', 'text-white');
+
+            cards.forEach(card => {
+                const catData = card.getAttribute('data-category');
+                if (category === 'all' || catData.includes(category)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
